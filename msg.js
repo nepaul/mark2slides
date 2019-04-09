@@ -110,7 +110,7 @@ const clean = () => {
   fs.removeSync(path.join(__dirname, 'nuxt'))
 }
 
-const msg = (src = '.', dist = 'dist', baseUrl = '/') => {
+const msg = (src = '.', dist = 'dist', baseUrl) => {
   init(src,
     filepath => filepath !== path.resolve('.', dist),
     () => generate(dist, baseUrl, clean))

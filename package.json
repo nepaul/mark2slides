@@ -5,8 +5,9 @@
   "main": "msg.js",
   "bin": "cmd.js",
   "scripts": {
-    "build": "node ./cmd.js -i input -o dist",
-    "clean": "rm -Rf nuxt .nuxt dist"
+    "build": "node ./cmd.js build -i input -o dist",
+    "clean": "rm -Rf nuxt .nuxt dist",
+    "serve": "./node_modules/http-server/bin/http-server ./dist"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/Jinjiang/msg#readme",
   "dependencies": {
     "fs-extra": "^7.0.1",
+    "http-server": "^0.11.1",
     "minimist": "^1.2.0",
     "ncp": "^2.0.0",
     "nuxt": "^2.5.1",

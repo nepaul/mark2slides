@@ -50,7 +50,7 @@ switch (cmd) {
     }
     const input = argv.i || argv.input || '.'
     const output = argv.o || argv.output || 'dist'
-    const baseUrl = argv.b || argv.base || '/'
+    const baseUrl = argv.b || argv.base
     msg(input, output, baseUrl)
     return
   default:
